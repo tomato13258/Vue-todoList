@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo List</title>
+  </head>
+  <body>
+    <div class="background w-100 bg-cyan-100 w-full h-screen justify-center flex items-center backdrop-grayscale-[.5] bg-no-repeat bg-cover grayscale-[50%] " style="background-image: url(https://i.pinimg.com/originals/7b/fb/98/7bfb98ac655ba6b6e912211808c516f2.jpg)">
+      <div class="box-all w-9/12 h-5/6 flex bg-gray-200/90  p-[50px] rounded-[5px] flex-col">
+          <div class="box box-top mb-[30px] flex justify-between text-[18px]">
+              <input type="text" class="add-text w-9/12 text-[18px] rounded-[10px]"  placeholder="請輸入待辦事項...">
+              <button class="addBtn border border-gray-900 px-[10px] py-[5px] rounded-[5px] ">新增</button>
+          </div>
+          <div class="box box-mid mb-[35px]">
+              <button class="all-btn border border-b-gray-900 px-[10px] py-[5px] rounded-[5px] text-[18px]  bg-[#e3c561] ">全部</button>
+              <button class="finish-btn border border-b-gray-900 px-[10px] py-[5px] rounded-[5px] text-[18px] bg-[#e3c561] ">已執行</button>
+              <button class="unfinish-btn border border-b-gray-900 px-[10px] py-[5px] rounded-[5px] text-[18px] bg-[#e3c561] ">未執行</button>
+          </div>
+          <div class="box box-bottom">
+              <div class="box-bottom-nav flex justify-around">
+                  <span class="text-[18px]">執行</span>
+                  <span class="text-[18px]">事項</span>
+                  <span class=" text-[18px]">功能</span>
+              </div>
+              <div class="line border  border-gray-900 mb-[5px]" ></div>
+              <!-- JS新增to do表單 -->
+              <div class="todoitem-all">
+                  <div class="box-bottom-todoitem flex justify-around  mb-[5px]">
+                      <input type="checkbox" class="ml-[45px]">
+                      <span class="todo-title ml-[55px]">寫作業好累</span>
+                      <div class="box-bottom-buttons">
+                          <button class="border  border-gray-900 px-[10px] text-[18px] py-[3px]">修改</button>
+                          <button class="border  border-gray-900 px-[10px] text-[18px] py-[3px]">刪除</button>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  </div>
+
+
+
+
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
